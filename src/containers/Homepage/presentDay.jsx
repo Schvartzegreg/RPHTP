@@ -1,7 +1,8 @@
 import React from "react"
-import { Element } from "react-scroll"
+import { Element, scroller } from "react-scroll"
 import styled from "styled-components"
 import { Marginer } from "../../assets/marginer";
+import { UpArrow } from "../../components/upArrow";
 import { theme } from "../../theme";
 
 const PresentContainer = styled.div`
@@ -10,6 +11,7 @@ const PresentContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 `;
 
 const PresentHeader = styled.h1`
@@ -60,11 +62,19 @@ const References = styled.a`
     margin-left: 1.5em;
 `;
 
-
+const UpArrowContainer = styled.div`
+    position: absolute;
+    left: 50%;
+    bottom: 20em;
+    transform: translateX(-50%);
+`;
 
 
 export function PresentDay(props)
 {
+    const top = () => {
+        scroller.scrollTo("topSection", { smooth: true, duration: 1500 });
+      };
     return(
         <Element name="presentDay">
             <PresentContainer>
@@ -90,7 +100,14 @@ export function PresentDay(props)
                 <PresentParagraph>
                     Thank you po ser!
                 </PresentParagraph>
-                <Marginer direction="vertical" margin="15em"/>
+                <Marginer direction="vertical" margin="18em"/>
+                <PresentParagraph>
+                    Scroll Up!
+                </PresentParagraph>
+                <Marginer direction="vertical" margin="7em"/>
+                <UpArrowContainer onClick={top}>
+                    <UpArrow/>
+                </UpArrowContainer>
                 <ReferenceContainer>
                     <ReferenceHeader>References</ReferenceHeader>
                     <References href="https://prezi.com/z5quaa8fmyvz/pre-colonial-period/#:~:text=Early%20Filipinos%20practiced%20a%20system,are%20exempted%20at%20paying%20tax." target="_blank">https://prezi.com/z5quaa8fmyvz/pre-colonial-period/#:~:text=Early%20Filipinos%20practiced%20a%20system,are%20exempted%20at%20paying%20tax.</References>
