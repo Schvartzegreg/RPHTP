@@ -25,6 +25,9 @@ const HeaderText = styled.div`
     font: Montserrat;
     text-align: center;
     background-color: #252525;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 10px;
 `;
 
 const Text1 = styled.div`
@@ -40,7 +43,9 @@ export function TopSection(props)
         <Element name="topSection">
         <TopContainer>
                 <Marginer direction="vertical" margin="1em"/>
-                <HeaderText>TASK PERFORMANCE</HeaderText>
+                <HeaderText>
+                    TASK PERFORMANCE
+                </HeaderText>
                 <Marginer direction="vertical" margin="1em"/>
                 <Text1>MADE ENTIRELY BY:</Text1>
                 <Creators
