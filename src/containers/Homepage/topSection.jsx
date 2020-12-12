@@ -8,6 +8,7 @@ import miguel from "../../assets/images/miguel.png"
 import topbackground from "../../assets/images/topbackground.jpg"
 import { Marginer } from '../../assets/marginer';
 import { theme } from "../../theme";
+import { DownArrow } from '../../components/downArrow';
 
 const TopContainer = styled.div`
     width: 100%;
@@ -17,6 +18,7 @@ const TopContainer = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(${topbackground});
+    position: relative;
 `;
 
 const HeaderText = styled.div`
@@ -35,6 +37,13 @@ const Text1 = styled.div`
     color: ${theme.primary};
     font: Montserrat;
     text-align: center;
+`;
+
+const DownArrowContainer2 = styled.div`
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
 `;
 
 export function TopSection(props)
@@ -56,7 +65,9 @@ export function TopSection(props)
                     title="MANGALI, MIGUEL GABRIEL V."
                     imgUrl={miguel}
                 />
-            
+                <DownArrowContainer2>
+                    <DownArrow/>
+                </DownArrowContainer2>
             </TopContainer>
             </Element>
     ) 

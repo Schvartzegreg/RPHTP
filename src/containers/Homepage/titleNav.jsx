@@ -32,7 +32,7 @@ const RPHSubject = styled.h1`
 const TaxationText = styled.div`
     font: Montserrat;
     font-size:40px;
-    font-weight:600;
+    font-weight:1000;
     color: ${theme.primary}
 `;
 

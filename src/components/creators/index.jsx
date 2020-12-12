@@ -17,6 +17,8 @@ const CreatorTitle = styled.h2`
 const CreatorImage = styled.img`
     width: 5em;
     height: 5em;
+    border: solid 1px;
+    border-radius: 50%;
 `
 
 export function Creators(props)
