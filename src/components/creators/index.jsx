@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import { theme } from "../../theme";
 
 const CreatorsContainer = styled.div`
     display: flex;
@@ -9,7 +10,7 @@ const CreatorsContainer = styled.div`
 
 const CreatorTitle = styled.h2`
     font: Montserrat;
-    color: #B5C089;
+    color: ${theme.primary};
     font-size: 25px;
 `
 

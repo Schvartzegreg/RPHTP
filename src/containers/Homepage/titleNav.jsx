@@ -1,13 +1,15 @@
 import React from 'react';
-import { Element } from 'react-scroll';
+import { Element } from "react-scroll";
 import styled from 'styled-components';
 
 import titlenavbackground from "../../assets/images/titlenavbackground.jpg"
 import { Marginer } from '../../assets/marginer';
+import { Button } from "../../components/button";
+import { theme } from "../../theme";
 
 const TNContainer = styled.div`
     width: 100%;
-    min-height: 500px;
+    height: 100vh;
     background-image: url(${titlenavbackground});
     position: relative;
 `;
@@ -23,8 +25,15 @@ const BackgroundFilter1 = styled.div`
 
 const RPHSubject = styled.h1`
     font: Montserrat;
-    font-size: 50px;
+    font-size: 70px;
     color: white;
+`;
+
+const TaxationText = styled.div`
+    font: Montserrat;
+    font-size:40px;
+    font-weight:600;
+    color: ${theme.primary}
 `;
 
 export function TitleNavigation(props)
@@ -33,9 +42,16 @@ export function TitleNavigation(props)
     <Element name="titleNavigation">
         <TNContainer>
             <BackgroundFilter1>
-                <Marginer direction="vertical" margin="5em"/>
+                <Marginer direction="vertical" margin="2em"/>
                 <RPHSubject>READINGS IN PHILIPPINE HISTORY</RPHSubject>
-                <Marginer direction="vertical" margin="5em"/>
+                <Marginer direction="vertical" margin="4em"/>
+                <TaxationText>TAXATION IN THE PHILIPPINES</TaxationText>
+                <Marginer direction="vertical" margin="6em"/>
+                <Button>PRE-COLONIAL PERIOD</Button>
+                <Marginer direction="vertical" margin="2em"/>
+                <Button>SPANISH ERA</Button>
+                <Marginer direction="vertical" margin="2em"/>
+                <Button>PRESENT DAY</Button>
             </BackgroundFilter1>
         </TNContainer>
     </Element>

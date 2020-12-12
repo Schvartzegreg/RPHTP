@@ -7,6 +7,7 @@ import gregory from "../../assets/images/gregory.png"
 import miguel from "../../assets/images/miguel.png"
 import topbackground from "../../assets/images/topbackground.jpg"
 import { Marginer } from '../../assets/marginer';
+import { theme } from "../../theme";
 
 const TopContainer = styled.div`
     width: 100%;
@@ -28,7 +29,7 @@ const HeaderText = styled.div`
 
 const Text1 = styled.div`
     font-size: 50px;
-    color: #909C5C;
+    color: ${theme.primary};
     font: Montserrat;
     text-align: center;
 `;
