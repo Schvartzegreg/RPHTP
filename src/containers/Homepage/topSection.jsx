@@ -51,7 +51,7 @@ const Text2 = styled.div`
     color: white;
     font: Montserrat;
     text-align: center;
-    opacity: 0.6;
+    opacity: 0.8;
 `;
 
 
