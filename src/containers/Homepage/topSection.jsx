@@ -46,6 +46,14 @@ const DownArrowContainer1 = styled.div`
     transform: translateX(-50%);
 `;
 
+const Text2 = styled.div`
+    font-size: 30px;
+    color: white;
+    font: Montserrat;
+    text-align: center;
+    opacity: 0.6;
+`;
+
 
 
 export function TopSection(props)
@@ -71,6 +79,10 @@ export function TopSection(props)
                     title="MANGALI, MIGUEL GABRIEL V."
                     imgUrl={miguel}
                 />
+                <Marginer direction="vertical" margin="2em"/>
+                <Text2>This is an interactive web.</Text2>
+                <Text2>Click and Hover</Text2>
+                <Text2>Find and Discover</Text2>
                 <DownArrowContainer1 onClick={titlenav}>
                     <DownArrow/>
                 </DownArrowContainer1>
