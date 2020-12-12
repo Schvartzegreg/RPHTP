@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { TitleNavigation } from './titleNav';
 import { Precolonial } from './precolonialPeriod';
 import "../../index.css"
+import { SpanishPeriod } from './spanishPeriod';
+import { PresentDay } from './presentDay';
 
 const PageContainer = styled.div`
     width: 100%;
@@ -18,5 +20,7 @@ export function Homepage(props)
         <TopSection />
         <TitleNavigation/>
         <Precolonial/>
+        <SpanishPeriod/>
+        <PresentDay/>
     </PageContainer>;
 }

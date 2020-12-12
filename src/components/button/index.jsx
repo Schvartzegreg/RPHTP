@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { theme } from "../../theme";
 
 const ButtonWrapper = styled.button`
   padding: ${({ small }) => (small ? "5px 8px" : "7px 15px")};

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Element } from "react-scroll";
+import { Element, scroller } from "react-scroll";
 import styled from 'styled-components';
 
 import titlenavbackground from "../../assets/images/titlenavbackground.jpg"
@@ -36,8 +36,20 @@ const TaxationText = styled.div`
     color: ${theme.primary}
 `;
 
+
+
 export function TitleNavigation(props)
 {
+    const precolonial = () => {
+        scroller.scrollTo("precolonialPeriod", { smooth: true, duration: 1500 });
+      };
+    const spanish = () => {
+        scroller.scrollTo("spanishPeriod", { smooth: true, duration: 1500 });
+      };
+    const present = () => {
+        scroller.scrollTo("presentDay", { smooth: true, duration: 1500 });
+      };
+
     return (
     <Element name="titleNavigation">
         <TNContainer>
@@ -47,11 +59,11 @@ export function TitleNavigation(props)
                 <Marginer direction="vertical" margin="4em"/>
                 <TaxationText>TAXATION IN THE PHILIPPINES</TaxationText>
                 <Marginer direction="vertical" margin="6em"/>
-                <Button>PRE-COLONIAL PERIOD</Button>
+                <Button onClick={precolonial}>PRE-COLONIAL PERIOD</Button>
                 <Marginer direction="vertical" margin="2em"/>
-                <Button>SPANISH ERA</Button>
+                <Button onClick={spanish}>SPANISH ERA</Button>
                 <Marginer direction="vertical" margin="2em"/>
-                <Button>PRESENT DAY</Button>
+                <Button onClick={present}>PRESENT DAY</Button>
             </BackgroundFilter1>
         </TNContainer>
     </Element>

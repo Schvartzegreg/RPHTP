@@ -39,7 +39,7 @@ const Text1 = styled.div`
     text-align: center;
 `;
 
-const DownArrowContainer1 = styled.div`
+const DownArrowContainer2 = styled.div`
     position: absolute;
     left: 50%;
     bottom: 20px;
@@ -50,7 +50,7 @@ const DownArrowContainer1 = styled.div`
 
 export function TopSection(props)
 {
-    const titlenav = () => {
+    const scrollToNextSection = () => {
         scroller.scrollTo("titleNavigation", { smooth: true, duration: 1500 });
       };
 
@@ -71,9 +71,9 @@ export function TopSection(props)
                     title="MANGALI, MIGUEL GABRIEL V."
                     imgUrl={miguel}
                 />
-                <DownArrowContainer1 onClick={titlenav}>
+                <DownArrowContainer2 onClick={scrollToNextSection}>
                     <DownArrow/>
-                </DownArrowContainer1>
+                </DownArrowContainer2>
             </TopContainer>
             </Element>
     ) 
