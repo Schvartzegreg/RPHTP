@@ -35,6 +35,34 @@ const Link = styled.a`
     cursor: pointer;
 `;
 
+const ReferenceContainer = styled.i`
+    width: 100%;
+    height: 15em;
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+`;
+
+const ReferenceHeader = styled.h2`
+    font-size: 30px;
+    color: white;
+    opacity: 0.6;
+    margin-left: 1.5em;
+`;
+
+const References = styled.a`
+    font-size: 15px;
+    style: italic;
+    color: white;
+    opacity: 0.6;
+    text-align: left;
+    margin-left: 1.5em;
+`;
+
+
+
+
 export function PresentDay(props)
 {
     return(
@@ -46,6 +74,9 @@ export function PresentDay(props)
                 <Marginer direction="vertical" margin="8em"/>
                 <PresentParagraph>
                     Now Taxation in the Philippines in our time is a complicated topic to discuss. All I know is that we tax people based on their Income, State of Life, etc. like any capitalist would do.
+                </PresentParagraph>
+                <PresentParagraph>
+                The most basic Tax System today is the Income Tax Rate. For resident and non-resident aliens engaged in trade or business in the Philippines, the maximum rate on income subject to final tax (usually passive investment income) is 20%. For non-resident aliens not engaged in trade or business in the Philippines, the rate is a flat 25%.
                 </PresentParagraph>
                 <Marginer direction="vertical" margin="15em"/>
                 <PresentParagraph>
@@ -60,6 +91,15 @@ export function PresentDay(props)
                     Thank you po ser!
                 </PresentParagraph>
                 <Marginer direction="vertical" margin="15em"/>
+                <ReferenceContainer>
+                    <ReferenceHeader>References</ReferenceHeader>
+                    <References href="https://prezi.com/z5quaa8fmyvz/pre-colonial-period/#:~:text=Early%20Filipinos%20practiced%20a%20system,are%20exempted%20at%20paying%20tax." target="_blank">https://prezi.com/z5quaa8fmyvz/pre-colonial-period/#:~:text=Early%20Filipinos%20practiced%20a%20system,are%20exempted%20at%20paying%20tax.</References>
+                    <References href="https://www.sfu.ca/fuga/history/hist02.html#:~:text=Under%20Spanish%20rule%2C%20the%20indigenous,these%20forced%20portions%20%22tributes%22." target="_blank">https://www.sfu.ca/fuga/history/hist02.html#:~:text=Under%20Spanish%20rule%2C%20the%20indigenous,these%20forced%20portions%20%22tributes%22.</References>
+                    <References href="https://prezi.com/j88gy118wqi7/the-philippines-under-spanish-colonial-rule/#:~:text=Filipinos%20between%2016%20to%2060,by%20the%20King%20in%201884." target="_blank">https://prezi.com/j88gy118wqi7/the-philippines-under-spanish-colonial-rule/#:~:text=Filipinos%20between%2016%20to%2060,by%20the%20King%20in%201884.</References>
+                    <References href="https://prezi.com/p/c_qyy4o9mc35/taxation-during-the-spanish-period/#:~:text=Cedulas%20were%20first%20issued%20based,required%20to%20obtain%20a%20cedula." target="_blank">https://prezi.com/p/c_qyy4o9mc35/taxation-during-the-spanish-period/#:~:text=Cedulas%20were%20first%20issued%20based,required%20to%20obtain%20a%20cedula.</References>
+                    <References href="https://www.bir.gov.ph/index.php/legal-matters/tax-guide-on-philippine-taxation.html" target="_blank">https://www.bir.gov.ph/index.php/legal-matters/tax-guide-on-philippine-taxation.html</References>
+                    <References href="https://www.youtube.com/watch?v=wZ8A81tI3XQ" target="_blank">https://www.youtube.com/watch?v=wZ8A81tI3XQ</References>
+                </ReferenceContainer>
             </PresentContainer>
         </Element>
     )
